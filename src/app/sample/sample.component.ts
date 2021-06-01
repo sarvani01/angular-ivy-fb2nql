@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sample.component.css']
 })
 export class SampleComponent implements OnInit {
+  text: string = 'WELCOME TO SAMPLE PAGE';
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit() {}
+  btnclicked() {
+    alert(this.text);
   }
-
 }
