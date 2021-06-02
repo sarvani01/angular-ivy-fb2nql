@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sample',
@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sample.component.css']
 })
 export class SampleComponent implements OnInit {
-  text: string = 'WELCOME TO SAMPLE PAGE';
+  @Input('t') inputText = '';
   constructor() {}
 
   ngOnInit() {}
-  btnclicked() {
-    alert(this.text);
-  }
+  // btnclicked() {
+  //   alert(this.inputText);
+  // }
 }

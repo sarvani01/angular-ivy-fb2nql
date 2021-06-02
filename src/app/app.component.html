@@ -1,6 +1,6 @@
-<hello name="{{ name }}"></hello>
-
 <p>
   Start editing to see some magic happen :)
 </p>
-<app-sample></app-sample>
+<input type="text" [(ngModel)]="txt"  />
+<input type="button" value="pass"  (click)="passtochild()"/>
+<app-sample [t]="name"></app-sample>
