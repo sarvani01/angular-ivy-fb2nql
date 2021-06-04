@@ -7,8 +7,12 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
+  pText = 'Start editing to see some magic happen :)';
   txt: string = '';
   passtochild() {
     this.name = this.txt;
+  }
+  catchEvent(evnt) {
+    this.pText = evnt;
   }
 }

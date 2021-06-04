@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-sample',
@@ -7,10 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SampleComponent implements OnInit {
   @Input('t') inputText = '';
+  @Output() passtext = new EventEmitter<string>();
+
   constructor() {}
 
   ngOnInit() {}
-  // btnclicked() {
-  //   alert(this.inputText);
-  // }
+  btnclicked() {
+    this.passtext.emit('Event Clicked!!!');
+  }
 }
