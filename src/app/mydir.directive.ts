@@ -21,6 +21,7 @@ export class MydirDirective implements OnInit {
     this.render.setAttribute(this.element.nativeElement, 'align', 'center');
     this.render.setStyle(this.element.nativeElement, 'color', 'white');
   }
+  
   // @HostListener('mouseenter') mouseover() {
   //   // this.renders.setStyle(this.element.nativeElement,'background-color',this.Dcolor);
   //   if (this.ec == '') {
