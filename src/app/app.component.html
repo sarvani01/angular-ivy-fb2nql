@@ -1,8 +1,8 @@
 <p>
   {{pText}}
 </p>
-<!-- <app-recipes-list></app-recipes-list> -->
-<div *ngIf="show; else reg">
+<app-recipes-list></app-recipes-list>
+<!-- <div *ngIf="show; else reg">
   <p *ngFor="let e of evenumbers;">{{e}}</p>
 </div>
 <ng-template #reg>
@@ -10,4 +10,4 @@
 </ng-template>
 <input type="text" [(ngModel)]="txt"  />
 <input type="button" value="pass"  (click)="passtochild()"/>
-<app-sample [t]="name" (passtext)="catchEvent($event);"></app-sample>
+<app-sample [t]="name" (passtext)="catchEvent($event);"></app-sample> -->
