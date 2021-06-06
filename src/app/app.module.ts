@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { SampleComponent } from './sample/sample.component';
 import { MydirDirective } from './mydir.directive';
+import { RecipesListComponent } from './recipes-list/recipes-list.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, HelloComponent, SampleComponent, MydirDirective],
+  declarations: [AppComponent, HelloComponent, SampleComponent, MydirDirective, RecipesListComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
