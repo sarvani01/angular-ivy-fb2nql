@@ -8,9 +8,11 @@ export class AppComponent {
   name = 'Angular ' + VERSION.major;
   pText = 'Start editing to see some magic happen :)';
   txt: string = '';
-
+  show: boolean = false;
   evenumbers = [2, 4, 6, 8, 10];
   passtochild() {
+    this.show = true;
+
     this.name = this.txt;
   }
   catchEvent(evnt) {
