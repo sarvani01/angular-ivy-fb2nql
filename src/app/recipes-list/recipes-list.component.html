@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
   <ul>
     <li *ngFor="let r of recipelist;">
       <p>{{r.name}}</p>
@@ -7,4 +7,11 @@
       <img src="{{r.imagePath}}" style="width:80px;height:30px;" alt="" />
     </li>
   </ul>
+</div> -->
+<div class="card" *ngFor="let r of recipelist;">
+  <img src="{{r.imagePath}}" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>{{r.name}}</b></h4>
+    <p>{{r.description}}</p>
+  </div>
 </div>
