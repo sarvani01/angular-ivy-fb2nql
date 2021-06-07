@@ -22,11 +22,7 @@ export class MydirDirective implements OnInit {
     //   alert('this will be applicable to paragraph element only!');
     // }
     this.bg = 'yellow';
-    this.render.setAttribute(
-      this.element.nativeElement,
-      'text-transform',
-      'uppercase'
-    );
+    this.render.setAttribute(this.element.nativeElement, 'align', 'center');
     this.render.setStyle(
       this.element.nativeElement,
       'text-transform',
