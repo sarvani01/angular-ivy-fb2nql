@@ -9,9 +9,9 @@
   </ul>
 </div> -->
 <div class="card" *ngFor="let r of recipelist;">
-  <img src="{{r.imagePath}}" alt="Avatar" style="width:100%">
+  <img  src="{{r.imagePath}}"  alt="Avatar" style="width:100%">
   <div class="container">
     <h4><b>{{r.name}}</b></h4>
-    <p>{{r.description}}</p>
+    <p appMydir>{{r.description}}</p>
   </div>
 </div>

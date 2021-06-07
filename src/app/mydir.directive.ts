@@ -17,9 +17,21 @@ export class MydirDirective implements OnInit {
   @HostBinding('style.backgroundColor') bg: string = '';
   constructor(private render: Renderer2, private element: ElementRef) {}
   ngOnInit() {
-    this.bg = 'green';
-    this.render.setAttribute(this.element.nativeElement, 'align', 'center');
-    this.render.setStyle(this.element.nativeElement, 'color', 'white');
+    console.log(this.element.nativeElement.tagName);
+    // if (this.element.nativeElement.tagName != 'P') {
+    //   alert('this will be applicable to paragraph element only!');
+    // }
+    this.bg = 'yellow';
+    this.render.setAttribute(
+      this.element.nativeElement,
+      'text-transform',
+      'uppercase'
+    );
+    this.render.setStyle(
+      this.element.nativeElement,
+      'text-transform',
+      'uppercase'
+    );
     // this.render.setStyle(
     //   this.element.nativeElement,
     //   'backgroundColor',
