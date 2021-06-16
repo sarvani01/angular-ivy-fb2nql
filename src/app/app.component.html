@@ -2,7 +2,10 @@
 <p appMydir>
   {{pText}}
 </p>
-<app-recipes-list></app-recipes-list>
+<div *ngFor="let n of numbers;" [ngClass]="n%2===0 ? 'mygre':'myre'">
+  <p>{{n}}</p>
+</div>
+<!-- <app-recipes-list></app-recipes-list> -->
 <!-- <div *ngIf="show; else reg">
   <p *ngFor="let e of evenumbers;">{{e}}</p>
 </div>
