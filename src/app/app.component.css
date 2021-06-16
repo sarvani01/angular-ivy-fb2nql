@@ -3,7 +3,9 @@ p {
 }
 .mygre {
   background-color: lightgreen;
+  color: red;
 }
 .myre {
   background-color: lightblue;
+  color: brown;
 }
